@@ -48,6 +48,7 @@ function displayShine(color) {
 function wrong() { // What to do if the user messes up
     currentList = [];
     disableButtons();
+    swal("Nice round!", "Your score that time was " + currentScore + "!", "success");
     document.getElementById("startButton").disabled = false;
     currentScore = 0;
     document.getElementById("currentScore").innerHTML = "Score: " + currentScore;
